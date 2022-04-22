@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Reflection;
+
+namespace LinqExample{
+class Program {
+
+        public static void Main (string[] args) {
+    int[] grades = {82, 75, 90, 98};
+
+    //Define query expression
+    IEnumerable<int> gradeQuery =
+      from grade in grades
+      where grade > 80
+      select grade;
+
+    //Execute where a query is not executed unti you iterate over the query variable.
+    foreach(int i in gradeQuery)
+    {
+      Console.Write(i+ " ");
+      //output: 82 90 98
+    }    
+  }
+}
