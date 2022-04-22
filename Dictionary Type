@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+
+class Program{
+public static void Main(string[] args){
+Dictionary <string, string> Names = new Dictionary<string,string>();
+  Names.Add("Molly","lopez");
+  Names.Add("Mike","Smith");
+  Names.Add("Stephanie","Yang");
+  
+  //checks to see if "Molly" is in the dictionary
+  if(!Names.ContainsValue("Molly")){
+    Console.WriteLine("Item found");
+    }else
+    Names.Add("Molly", "Lopez");
+    }
+    Names.Remove("Mike");
+    }
