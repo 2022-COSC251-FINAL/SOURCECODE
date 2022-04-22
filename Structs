@@ -1,0 +1,25 @@
+using System;
+
+//Struct
+namespace StructExample{
+public struct Book{
+  public string Title;
+  public string Author;
+  public int Year;
+  public decimal sold;
+  }
+  class Program
+    public static void Main(string[] args){
+    
+    Book newBook = Book();
+    newBook.Title = "Where the Crawdads Sing";
+    newBook.Author = "Delia Owens";
+    newBook.Year = 2018;
+    newBook.sold = 4.5M;
+    
+    Console.Write Line($"Book {newBook.Title} was written by {newBook.Author}" + $" from {newBook.Year}. the number of copies sold is {newBook.sold}");
+    
+    Consolve.ReadKey();
+    }
+    }
+    }
