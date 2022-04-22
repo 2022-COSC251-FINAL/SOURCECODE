@@ -1,0 +1,14 @@
+//CLASS WRITTEN IN C#
+using System;
+class Program{
+}
+
+
+//CLASS WRITTEN USING A .NET FRAMEWORK ASSEMBLY,TYPE, AND METHOD.
+using System;
+
+class Program{
+static void Main90{
+System.Console.Write("hello world");
+}
+}
